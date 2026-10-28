@@ -20,6 +20,9 @@
  * ============================================================================
  */
 
+/* Visual Studio: evita o erro C4996 em fopen/localtime ("função insegura"). */
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
